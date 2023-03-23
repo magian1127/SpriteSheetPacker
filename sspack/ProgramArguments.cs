@@ -42,6 +42,9 @@ namespace sspack
 		[Argument(ArgumentType.AtMostOnce, ShortName = "", HelpText = "Output file name for the map.")]
 		public string map;
 
+		[Argument(ArgumentType.AtMostOnce, ShortName = "", HelpText = "文件名分隔符")]
+		public string nameSplit;
+
 		[Argument(ArgumentType.AtMostOnce, ShortName = "", HelpText = "Maximum ouput width.", DefaultValue = Constants.DefaultMaximumSheetWidth)]
 		public int mw = Constants.DefaultMaximumSheetWidth;
 
@@ -56,6 +59,9 @@ namespace sspack
 
 		[Argument(ArgumentType.AtMostOnce, ShortName = "", HelpText = "Ensures output is square.")]
 		public bool sqr = false;
+
+		[Argument(ArgumentType.AtMostOnce, ShortName = "", HelpText = "相同大小精灵.")]
+		public bool sameSize = false;
 
 		[Argument(ArgumentType.AtMostOnce, ShortName = "", HelpText = "Searches subdirectories of any input directories.")]
 		public bool r = false;

@@ -144,7 +144,7 @@ namespace sspack
 				Dictionary<string, Rectangle> outputMap;
 
 				// pack the image, generating a map only if desired
-				int result = imagePacker.PackImage(images, arguments.pow2, arguments.sqr, arguments.mw, arguments.mh, arguments.pad, mapExporter != null, out outputImage, out outputMap);
+				int result = imagePacker.PackImage(images, arguments.nameSplit, arguments.pow2, arguments.sqr, arguments.sameSize, arguments.mw, arguments.mh, arguments.pad, mapExporter != null, out outputImage, out outputMap);
 				if (result != 0)
 				{
 					Console.WriteLine("There was an error making the image sheet.");
